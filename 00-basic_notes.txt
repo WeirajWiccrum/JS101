@@ -1,0 +1,23 @@
+JavaScript is a high-level, dynamic programming language based on the ECMAScript specification.
+JavaScript can run in both browser environments (like Chrome, Firefox, Safari) and server environments (like Node.js).
+    JS is typically used to manipulate the Document Object Model (DOM) and handle user interactions.
+JavaScript was traditionally interpreted line by line.
+    But modern engines like V8 in Chrome and Node.js use a Just-In-Time (JIT) compiler.
+    JS is not purely compiled or purely interpreted.
+    JIT compiler prepare a byte of the written program and that byte code is interpreted line-by-line.
+    If JS would have been a purely interpreted language it would have atleast printed Hello according the code below, but that won't be the case.
+        Program 1: doesn't even executes even the first correct line of code.
+            console.log("Hello");   --> correct line
+            function fun() {        --> correct line
+                console..log(1)     --> incorrect line
+                return 0;           --> correct line
+            }                       --> correct line
+            console...log("world"); --> incorrect line
+            console.log("END")      --> correct line
+        Program 2: logs the string 'hi' and then throws the error.
+            console.log("hi");      --> correct line
+            console.lo("bye");      --> incorrect line
+You can source a JS file in a HTML documument
+    <body>
+        <scrit src = "app.js"></script>
+    </body>

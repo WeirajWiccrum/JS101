@@ -1,0 +1,16 @@
+1. function definitions
+2. input params and arguments
+3. return
+4. function expression
+5. high order function
+6. closure
+7. this keyword
+8. bind method
+9. arrow syntax
+  arrow function don't have their own 'this' value and they are always anonymous which makes them ideal for function expression.
+10. anonymous function
+11. Call Stack, Stack and Heap Memory
+12. Passed by Value:
+  when passing arguments a primitive like a number is passed by value which means a copy is created of the original variable.
+13. Passed by Reference:
+  when argument is an object it means it is stored in a heap and it is passed by reference which means multiple parts of the code maybe mutating the same object.

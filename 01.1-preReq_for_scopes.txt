@@ -1,0 +1,31 @@
+let varOne = 1;
+varOne = 2; // allowed reassignment
+let varOne = 3;// throws error because variable got redeclared in the same scope
+{
+  let varOne = 4; // variable gets redeclared in a seprate block
+  console.log(varOne); // logs the block value of varOne i.e. 4
+}
+console.log(varOne) // logs the global value of varOne i.e. 2
+
+const varTwo = 1;
+varTwo = 2; // throws error because programs tries to reassing value to variable with `const` intializer
+const varTwo = 3; // throws error because programs tries to redeclare value to variable with `const` intializer
+{
+  const varTwo = 4; // variable gets redeclared in a seprate block
+  console.log(varTwo); // logs the block value of varTwo i.e. 4
+}
+console.log(varTwo); // logs the global value of varTwo i.e. 1
+
+var varThree = 1;
+varThree = 2; // allowed reassignment.
+var varThree = 3; // allowed redeclration in the same scope
+{
+  var varThree = 4; // allowed redeclaration (potential reassignment)
+  console.log(varThree); // logs the current value of varThree i.e. 4
+}
+console.log(varThree); // logs the current value of varThree i.e 4
+
+Additional Notes:
+  1. A fucntion/block creates a scope (range of visibility) i.e. the context of execution.
+    This mean that some variables can belong to this context and are only visible in this range.
+  2. Agenda for creating scopes is that we want certain variables to not get accessed from outside of the funciton/block or within other function/block.
